@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="instagram.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-left: 30%;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .username {
+            font-size: 1.5em;
+        }
+
+        .name {
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        .bio {
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        .edit-bio-button {
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .stats span {
+            font-size: 1em;
+        }
+
+        .follow-button,
+        .message-button {
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+
+        .follow-button:hover,
+        .message-button:hover,
+        .edit-bio-button:hover {
+            background-color: #007bb5;
+        }
+
+        .highlight-item img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .highlight-item p {
+            font-size: 0.8em;
+            color: #ccc;
+        }
+
+        .tab-content .tab-pane {
+            display: none;
+        }
+
+        .highlight-item {
+            padding: 1%;
+        }
+
+        .tab-content .tab-pane.active {
+            display: block;
+        }
+
+        .post-grid img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .highlights {
+            overflow-x: scroll;
+            width: 80%;
+            margin-left: 5%;
+
+        }
+
+        .highlights::-webkit-scrollbar {
+            display: none;
+
+
+        }
+        a{
+            text-decoration: none;
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2 sidebar">
+                <div>
+                    <div>
+                        <p class="heading">Instagram</p>
+                    </div>
+                    <a href="instagram.html">
+                        <div class="menu-item">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </div>
+                    </a>
+
+
+
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling" class="menu-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search</p>
+                    </div>
+
+
+                    <div class="offcanvas offcanvas-start bg-black" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Search" />
+                                    <button class="close-btn">x</button>
+                                </div>
+                                <div class="recent-searches">
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <!-- Add more recent search items here -->
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                </div>
+                                <button class="clear-all">Clear all</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-brands fa-wpexplorer"></i>
+                        <p>Explore</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <p>Reels</p>
+                    </div>
+                    <a href="Messagebar.html">
+                        <div class="menu-item">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Message</p>
+                        </div>
+                    </a>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>Notification</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Create</p>
+                    </div>
+                   <a href="profile.html">
+                    <div class="menu-item">
+                        <img src="rajat.jpg" width="25px" height="30px" style="border-radius: 30px;" alt="">
+                        <p>Profile</p>
+                    </div>
+                   </a>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="container" style="margin-top: 40%;">
+                    <div class="d-flex align-items-center mb-4" style="width: 250px; margin-left: 8%;">
+                        <div class="profile-picture me-3">
+                            <img src="rajawat.png" alt="Profile Picture">
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-evenly">
+                                <h1 class="username">raj_x071</h1>
+                                <div class="d-flex ms-5">
+                                    <button class="follow-button">Follow</button>
+                                    <button class="message-button">Message</button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-around mt-3 stats">
+                                <span><strong>128</strong> posts</span>
+                                <span><strong>285</strong> followers</span>
+                                <span><strong>102</strong> following</span>
+                            </div>
+                            <p class="">༺MrRαʝ🅱αnna༻</p>
+                            <p class="bio">RAJAWAT SAAB <br>
+                                ۩V͇̿I͇̿P͇̿۩𝙍𝖆յᵽᴜƚ۩V͇̿I͇̿P͇̿۩ <br>
+                                𝐕𝐢𝐝𝐞𝐨 𝐜𝐫𝐞𝐚𝐭𝐨𝐫|𝐅𝐚𝐬𝐡𝐢𝐨𝐧 | 𝐋𝐢𝐟𝐞𝐬𝐭𝐲𝐥𝐞 <br>
+                                𝐑𝐚𝐣𝐚𝐬𝐭𝐡𝐚𝐧 | 𝐍𝐞𝐯𝐞𝐫 𝐠𝐢𝐯𝐞 𝐮𝐩</p>
+                            <button class="edit-bio-button">Edit Bio</button>
+
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 highlights">
+                        <div class="highlight-item text-center me-2">
+                            <img src="rajawat.png" alt="Highlight 1">
+                            <p>raj_x071</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://im.rediff.com/movies/2023/jul/18bb-elvish-yadav1.jpg?w=670&h=900"
+                                alt="Highlight 2">
+                            <p>elvish yadav</p>
+                        </div>
+                        <div class="highlight-item text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXx5vbjQrh2So3eyRR3zs4fIpgStiAcPB1EA&s"
+                                alt="Highlight 3">
+                            <p>aradhya_singh</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://im.rediff.com/movies/2023/jul/18bb-elvish-yadav1.jpg?w=670&h=900"
+                                alt="Highlight 1">
+                            <p>sidhumossewala</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kQkwfU7S65eaueE2hk4RnqSW9TvY2JItiA&s"
+                                alt="Highlight 2">
+                            <p>Sidu_0000</p>
+                        </div>
+                        <div class="highlight-item text-center">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_miixApYIEU_A_7yf_Ivw6o4pPOrBE63Iy4GwXOTh8tCtc=s900-c-k-c0x00ffffff-no-rj"
+                                alt="Highlight 3">
+                            <p>___295__</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5J5pIUJ1ajuBZ7Er1tW1bb10QXVN0KQ-yA&s"
+                                alt="Highlight 1">
+                            <p>@...._moosewala</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREj1xWOZ8jUDx1-bIe-oqcn2NiHzqzs1n85A&s"
+                                alt="Highlight 2">
+                            <p>kilng</p>
+                        </div>
+                        <div class="highlight-item text-center">
+                            <img src="rajawat.png" alt="Highlight 3">
+                            <p>Highlight 3</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="https://i.pinimg.com/736x/91/2a/35/912a35b7fed07e59e473c7bfd8541d46.jpg"
+                                alt="Highlight 1">
+                            <p>Highlight 1</p>
+                        </div>
+                        <div class="highlight-item text-center me-2">
+                            <img src="rajawat.png" alt="Highlight 2">
+                            <p>Highlight 2</p>
+                        </div>
+                        <div class="highlight-item text-center">
+                            <img src="rajawat.png" alt="Highlight 3">
+                            <p>Highlight 3</p>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" style="padding-left: 40%;">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#posts">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#reels">Reels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tagged">Tagged</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-4">
+                        <div class="tab-pane fade show active" id="posts">
+                            <div class="row g-2 post-grid">
+                                <div class="col-4">
+                                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_miixApYIEU_A_7yf_Ivw6o4pPOrBE63Iy4GwXOTh8tCtc=s900-c-k-c0x00ffffff-no-rj"
+                                        alt="Post Image 1">
+                                </div>
+                                <div class="col-4">
+                                    <img src="rajawat.png" alt="Post Image 2">
+                                </div>
+                                <div class="col-4">
+                                    <img src="https://w0.peakpx.com/wallpaper/933/414/HD-wallpaper-sidhu-moose-wala-new-song-level-song-punjabi.jpg"
+                                        alt="Post Image 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reels">
+                            <div class="row g-2 post-grid">
+                                <div class="col-4">
+                                    <img src="https://smartcdn.gprod.postmedia.digital/vancouversun/wp-content/uploads/2022/05/image-from-ios_270443669-w.jpg?quality=90&strip=all&w=288&h=216&sig=hHI6PFtsRzgzZXvrwvCudw"
+                                        alt="Reel Image 1">
+                                </div>
+                                <div class="col-4">
+                                    <img src="https://www.hindustantimes.com/ht-img/img/2023/08/16/900x1600/sonam_bajwa_1692162602525_1692162606720.jpg"
+                                        alt="Reel Image 2">
+                                </div>
+                                <div class="col-4">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Y7Q9HFbPKa3LjTSfOY2HM_zXvHNpqK0Pyw&s"
+                                        alt="Reel Image 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tagged">
+                            <div class="row g-2 post-grid">
+                                <div class="col-4">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_7P7IGes8LTVu6y6NuQDjQgMJqcxAJ6z-Q&s"
+                                        alt="Tagged Image 1">
+                                </div>
+                                <div class="col-4">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEtsJTswzDOrd9LTZzIusqSYAl4jFW_hAqzg&s"
+                                        alt="Tagged Image 2">
+                                </div>
+                                <div class="col-4">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMOD8L8PwX01otUpCZMMGRjv7juKT-0EAqQ&s"
+                                        alt="Tagged Image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.edit-bio-button').addEventListener('click', function () {
+            let newBio = prompt('Enter your new bio:');
+            if (newBio) {
+                document.querySelector('.bio').textContent = newBio;
+            }
+        });
+
+        document.querySelector('.follow-button').addEventListener('click', function () {
+            this.textContent = this.textContent === 'Follow' ? 'Unfollow' : 'Follow';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

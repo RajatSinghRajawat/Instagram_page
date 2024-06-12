@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Direct Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.menu-options {
+  display: flex;
+}
+
+.menu-options .option {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chat-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.chat-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.chat-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.chat-box .send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="profile-info">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>krishna_acadmy321</h2>
+      </div>
+      <div class="menu-options">
+        <div class="option">Primary</div>
+        <div class="option">General</div>
+        <div class="option">Requests (2)</div>
+      </div>
+    </div>
+    <div class="chat-list">
+      <div class="chat-item">
+        <img src="rohit.jpg" alt="Rohit Jangir">
+        <div class="chat-info">
+          <h3>Rohit Jangir</h3>
+          <p>Liked a message · 14m</p>
+        </div>
+      </div>
+      <!-- Add more chat items here -->
+    </div>
+    <div class="chat-box">
+      <input type="text" placeholder="Send a message to start a chat">
+      <button class="send-button">Send message</button>
+    </div>
+  </div>
+  <script>
+
+document.querySelector('.send-button').addEventListener('click', sendMessage);
+
+function sendMessage() {
+  const messageInput = document.querySelector('.chat-box input');
+  const message = messageInput.value.trim();
+
+  if (message.length > 0) {
+    // Add the message to the chat list
+    addMessageToChat(message);
+
+    // Clear the message input
+    messageInput.value = '';
+  }
+}
+
+function addMessageToChat(message) {
+  const chatList = document.querySelector('.chat-list');
+  const chatItem = document.createElement('div');
+  chatItem.classList.add('chat-item');
+
+  // Create the message element
+  const messageElement = document.createElement('div');
+  messageElement.textContent = message;
+  messageElement.classList.add('message');
+
+  // Append the message to the chat item
+  chatItem.appendChild(messageElement);
+
+  // Append the chat item to the chat list
+  chatList.appendChild(chatItem);
+
+  // Scroll to the bottom of the chat list
+  chatList.scrollTop = chatList.scrollHeight;
+}
+  </script>
+</body>
+</html>

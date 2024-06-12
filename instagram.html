@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="instagram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2 sidebar">
+                <div>
+                    <div>
+                        <p class="heading">Instagram</p>
+                    </div>
+                    <a href="instagram.html">
+                        <div class="menu-item">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </div>
+                    </a>
+
+
+
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling" class="menu-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search</p>
+                    </div>
+
+
+                    <div class="offcanvas offcanvas-start bg-black" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Search" />
+                                    <button class="close-btn">x</button>
+                                </div>
+                                <div class="recent-searches">
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <!-- Add more recent search items here -->
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                    <div class="recent-item">
+                                        <div class="profile-pic">
+                                            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/292491293_1217622639090611_7309565893727441951_n.jpg?stp=dst-jpg_s100x100&_nc_cat=104&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=FvlUGWqXWrAQ7kNvgHq-opZ&_nc_ad=z-m&_nc_cid=2034&_nc_ht=scontent.cdninstagram.com&oh=00_AYDwgsLXomgH3y7Legn0eUCI0vRoHLRC8k2jjIr6vLWmhg&oe=6669A564"
+                                                alt="Profile Picture" />
+                                        </div>
+                                        <div class="username">tipsgindia</div>
+                                        <div class="status">Tips-G India</div>
+                                        <button class="remove-btn">x</button>
+                                    </div>
+                                </div>
+                                <button class="clear-all">Clear all</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-brands fa-wpexplorer"></i>
+                        <p>Explore</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <p>Reels</p>
+                    </div>
+                    <a href="Messagebar.html">
+                        <div class="menu-item">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Message</p>
+                        </div>
+                    </a>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>Notification</p>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Create</p>
+                    </div>
+                    <a href="profile.html">
+                        <div class="menu-item">
+                            <img src="rajat.jpg" width="25px" height="30px" style="border-radius: 30px;" alt="">
+                            <p>Profile</p>
+                        </div>
+                    </a>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-10 margin">
+                <div class="main_content">
+                    <div class="content">
+                        <header>
+                            <div class="stories d-flex">
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pAkGM139WS_v1l48NoSHjEt2OtX-t_RMwA&s"
+                                            alt="Sonam Ajwa">
+                                    </div>
+                                    <div class="insta-id">@sonamajwa</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img" src="rajawat.png" alt="Elvish Yadav">
+                                    </div>
+                                    <div class="insta-id">@elvish_yadav</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBujebRk9LNpr9J4zHdJBgXwQafV7xuPjWA&s"
+                                            alt="Elvish Yadav">
+                                    </div>
+                                    <div class="insta-id">@elvish_yadav</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrj4nyWk0lgeBA94AVtzYvTkfVSCN_yi4C_A&s"
+                                            alt="Elvish Yadav">
+                                    </div>
+                                    <div class="insta-id">@elvish_yadav</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJ6vjb8X2uFQUgAljqSOQdTJMurshw_57Gw&s"
+                                            alt="Influencer 1">
+                                    </div>
+                                    <div class="insta-id">@anushka_sen</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://akamaividz2.zee5.com/image/upload/w_300,c_scale,f_auto,q_auto/v1674022721/hipi/assets/user/3b062041-9005-4be3-bca2-155789562329/3b062041-9005-4be3-bca2-155789562329.jpg"
+                                            alt="Influencer 2">
+                                    </div>
+                                    <div class="insta-id">
+                                        @khushiisaraswat</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZy2wWNabPxHXb89CdCmhJztSY-SRfkQ7gVQ&s"
+                                            alt="Influencer 3">
+                                    </div>
+                                    <div class="insta-id">@aradhyasingh</div>
+                                </div>
+                                <div class="story">
+                                    <div class="border-gradient">
+                                        <img class="circular-img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBujebRk9LNpr9J4zHdJBgXwQafV7xuPjWA&s"
+                                            alt="Elvish Yadav">
+                                    </div>
+                                    <div class="insta-id">@elvish_yadav</div>
+                                </div>
+                                <!-- Repeat the above structure for more stories -->
+                            </div>
+                        </header>
+                        <section class="posts mt-4">
+                            <div class="post">
+                                <div>
+                                    <div class="post-header d-flex justify-content-between">
+                                        <div class="username-container">
+                                            <img src="https://i.pinimg.com/736x/22/34/c2/2234c26ed8cf824f680560fed0337472.jpg"
+                                                alt="User Image">
+                                            <div class="username">__@Krishna_academy</div>
+                                        </div>
+                                        <div class="song">Radhe Radhe ji </div>
+                                    </div>
+                                    <div class="post-image">
+                                        <img src="https://i.pinimg.com/736x/22/34/c2/2234c26ed8cf824f680560fed0337472.jpg"
+                                            class="img-fluid" alt="Post Image">
+                                    </div>
+                                    <div class="post-icons d-flex justify-content-between mt-2">
+                                        <div>
+                                            <i class="far fa-heart like-icon"></i>
+                                            <i class="far fa-comment comment-icon"></i>
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="post-content mt-2">
+                                        <p class="likes like-count">1,129 likes</p>
+                                        <p class="caption">जया श्री कृष्णा 🌸</p>
+                                    </div>
+                                    <div class="comment-section hidden d-flex ">
+                                        <input type="text" class="comment-input" placeholder="Add a comment..." />
+                                        <div id="buttons">
+                                            <button id="emoji-button">😀</button>
+                                        </div>
+                                        <div id="emoji-container" class="emoji-container"></div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="post">
+                                <div>
+                                    <div class="post-header d-flex justify-content-between">
+                                        <div class="username-container">
+                                            <img src="rajawat.png" alt="User Image">
+                                            <div class="username">__mr.editx_3</div>
+                                        </div>
+                                        <div class="song">Ravindra Sathe - Shendur Laal Chadayo (Aarti)</div>
+                                    </div>
+                                    <div class="post-image">
+                                        <img src="rajawat.png" class="img-fluid" alt="Post Image">
+                                    </div>
+                                    <div class="post-icons d-flex justify-content-between mt-2">
+                                        <div>
+                                            <i class="far fa-heart like-icon"></i>
+                                            <i class="far fa-comment comment-icon"></i>
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="post-content mt-2">
+                                        <p class="likes like-count">1,129 likes</p>
+                                        <p class="caption">जया श्री कृष्णा 🌸</p>
+                                    </div>
+                                    <div class="comment-section hidden">
+                                        <input type="text" class="comment-input" placeholder="Add a comment..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div>
+                                    <div class="post-header d-flex justify-content-between">
+                                        <div class="username-container">
+                                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_miixApYIEU_A_7yf_Ivw6o4pPOrBE63Iy4GwXOTh8tCtc=s900-c-k-c0x00ffffff-no-rj"
+                                                alt="User Image">
+                                            <div class="username">__@sidhu_mossewala</div>
+                                        </div>
+                                        <div class="song">Sidhu Moosewal</div>
+                                    </div>
+                                    <div class="post-image">
+                                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_miixApYIEU_A_7yf_Ivw6o4pPOrBE63Iy4GwXOTh8tCtc=s900-c-k-c0x00ffffff-no-rj"
+                                            class="img-fluid" alt="Post Image">
+                                    </div>
+                                    <div class="post-icons d-flex justify-content-between mt-2">
+                                        <div>
+                                            <i class="far fa-heart like-icon"></i>
+                                            <i class="far fa-comment comment-icon"></i>
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="post-content mt-2">
+                                        <p class="likes like-count">1,129 likes</p>
+                                        <p class="caption">जया श्री कृष्णा 🌸</p>
+                                    </div>
+                                    <div class="comment-section hidden">
+                                        <input type="text" class="comment-input" placeholder="Add a comment..." />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post">
+                                <div>
+                                    <div class="post-header d-flex justify-content-between">
+                                        <div class="username-container">
+                                            <img src="https://www.hindustantimes.com/ht-img/img/2023/08/16/900x1600/sonam_bajwa_1692162602525_1692162606720.jpg"
+                                                alt="User Image">
+                                            <div class="username">__@sonam_bajawa</div>
+                                        </div>
+                                        <div class="song">sonam Bajwa</div>
+                                    </div>
+                                    <div class="post-image">
+                                        <img src="https://www.hindustantimes.com/ht-img/img/2023/08/16/900x1600/sonam_bajwa_1692162602525_1692162606720.jpg"
+                                            class="img-fluid" alt="Post Image">
+                                    </div>
+                                    <div class="post-icons d-flex justify-content-between mt-2">
+                                        <div>
+                                            <i class="far fa-heart like-icon"></i>
+                                            <i class="far fa-comment comment-icon"></i>
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="post-content mt-2">
+                                        <p class="likes like-count">1,129 likes</p>
+                                        <p class="caption"></p>
+                                    </div>
+                                    <div class="comment-section hidden">
+                                        <input type="text" class="comment-input" placeholder="Add a comment..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div>
+                                    <div class="post-header d-flex justify-content-between">
+                                        <div class="username-container">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZy2wWNabPxHXb89CdCmhJztSY-SRfkQ7gVQ&s"
+                                                alt="User Image">
+                                            <div class="username">__@aradhya_singh</div>
+                                        </div>
+                                        <div class="song">Sidhu Moosewal</div>
+                                    </div>
+                                    <div class="post-image">
+                                        <img src="https://i.ytimg.com/vi/aur3Z4an1es/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLC8GJtka_p0yCmfs7KclNcM9udz-A"
+                                            class="img-fluid" alt="Post Image">
+                                    </div>
+                                    <div class="post-icons d-flex justify-content-between mt-2">
+                                        <div>
+                                            <i class="far fa-heart like-icon"></i>
+                                            <i class="far fa-comment comment-icon"></i>
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="post-content mt-2">
+                                        <p class="likes like-count">1,129 likes</p>
+                                        <p class="caption">जया श्री कृष्णा 🌸</p>
+                                    </div>
+                                    <div class="comment-section hidden">
+                                        <input type="text" class="comment-input" placeholder="Add a comment..." />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="suggestions">
+                        <div class="profile-container">
+                            <div class="profile-info">
+                                <div class="profile-picture">
+                                    <img src="https://contestant.in/wp-content/uploads/2021/08/Urfi-Javed.jpg"
+                                        alt="Profile Picture">
+                                </div>
+                                <div class="profile-details">
+                                    <strong class="profile-name">Uorfi (@urf7i)</strong>
+                                    <p class="profile-username">༺MrRαʝ🅱αnna༻</p>
+                                </div>
+                            </div>
+                            <p class="profile-action">Switch</p>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <h6>Suggestion all</h6>
+                            <h6>See all</h6>
+                        </div>
+                        <div class="profile-container">
+                            <div class="profile-info">
+                                <div class="profile-picture">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrj4nyWk0lgeBA94AVtzYvTkfVSCN_yi4C_A&s"
+                                        alt="Profile Picture">
+                                </div>
+                                <div class="profile-details">
+                                    <strong class="profile-name">sidhumosseewal</strong>
+                                    <p class="profile-username">༺MrRαʝ🅱αnna༻</p>
+                                </div>
+                            </div>
+                            <p class="profile-action ps-3">Switch</p>
+                        </div>
+                        <div class="profile-container">
+                            <div class="profile-info">
+                                <div class="profile-picture">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kQkwfU7S65eaueE2hk4RnqSW9TvY2JItiA&s"
+                                        alt="Profile Picture">
+                                </div>
+                                <div class="profile-details">
+                                    <strong class="profile-name ">@sonambajwa</strong>
+                                    <p class="profile-username">sonam____</p>
+                                </div>
+                            </div>
+                            <p class="profile-action ps-5">Switch</p>
+                        </div>
+                        <div class="profile-container">
+                            <div class="profile-info">
+                                <div class="profile-picture">
+                                    <img src="rajawat.png" alt="Profile Picture">
+                                </div>
+                                <div class="profile-details">
+                                    <strong class="profile-name">raj_x071</strong>
+                                    <p class="profile-username">༺MrRαʝ🅱αnna༻</p>
+                                </div>
+                            </div>
+                            <p class="profile-action ps-5">Switch</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="instagram.js"></script>
+
+</html>
